@@ -1,0 +1,37 @@
+.container {
+  margin: 25px;
+  width: 95%;
+}
+
+textarea {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  height: 500px;
+}
+
+.container-textarea textarea {
+  width: 100%;
+  padding: 10px;
+  line-height: 1.5;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px #999;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  font-family: cursive;
+}
+
+.btn-transpile {
+  width: 200px;
+  margin-right: -20px;
+}
+
+.inline {
+  display: inline-block;
+  width: 40%;
+}

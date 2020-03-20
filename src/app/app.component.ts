@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {AppService} from './app.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'java-to-typescript';
+
+  javaClass = '';
+  tsClass = '';
+
+  constructor(private appService: AppService) {
+  }
+
+  transpile(): void {
+    this.tsClass = this.appService.transpile(this.javaClass);
+  }
 }
